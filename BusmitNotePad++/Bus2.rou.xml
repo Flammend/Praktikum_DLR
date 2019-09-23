@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/20/19 13:09:50 by Eclipse SUMO netedit Version v1_3_1+0387-af6f2b6888
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\camil\Sumo\Crash\Bus2.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\camil\Sumo\Crash\Bus2.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="C:\Users\camil\Sumo\Crash\Bus2.xml"/>
+        <route-files value="C:\Users\camil\Sumo\Crash\Bus2.rou.xml"/>
+    </netedit>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="DEFAULT_VEHTYPE" vClass="bus" guiShape="bus"/>
+    <vType id="vType_0"/>
+    <flow id="Bus" begin="0.00" line="Bus" from="gneE0" to="gneE4" end="10000.00" period="100.00">
+        <stop busStop="gneE0" until="70.00"/>
+        <stop busStop="gneE1" until="105.00"/>
+        <stop busStop="gneE2" until="140.00"/>
+        <stop busStop="gneE3" until="175.00"/>
+        <stop busStop="gneE4" until="210.00"/>
+    </flow>
+    <personFlow id="personFlow_0" begin="0.00" end="10000.00" period="100.00">
+        <personTrip from="gneE0" to="gneE4" modes="public"/>
+    </personFlow>
+    <personFlow id="personFlow_1" begin="0.00" end="10000.00" period="100.00">
+        <personTrip from="gneE1" to="gneE4" modes="public"/>
+    </personFlow>
+    <personFlow id="personFlow_2" begin="0.00" end="10000.00" period="100.00">
+        <personTrip from="gneE0" to="gneE3" modes="public"/>
+    </personFlow>
+</routes>

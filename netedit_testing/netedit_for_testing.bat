@@ -1,0 +1,1 @@
+start C:\Users\camil\Downloads\sumo-win64-git\sumo-git\bin\netedit

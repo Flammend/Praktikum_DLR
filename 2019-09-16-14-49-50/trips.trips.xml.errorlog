@@ -1,0 +1,11 @@
+Warning: At actuated tlLogic 'GS_1616941672', actuated phase 2 has no controlling detector
+Warning: Missing yellow phase in tlLogic 'joinedS_0', program '0' for tl-index 23 when switching to phase 11
+Warning: At actuated tlLogic 'joinedS_0', linkIndex 15 has no controlling detector
+Warning: At actuated tlLogic 'joinedS_0', linkIndex 16 has no controlling detector
+Warning: busStop '253943340' on lane '171091369#0_0' is too short for vehicle '0_tram_88:0'.
+Warning: busStop '1883472919' on lane '171257586_0' is too short for vehicle '2_tram_60:1'.
+Warning: busStop '1823188105' on lane '171257556#1_0' is too short for vehicle '4_tram_61:1'.
+Warning: Vehicle '5_train_S3:0' is not allowed to depart on any lane of its first edge.
+Warning: Vehicle '6_train_S3:1' is not allowed to depart on any lane of its first edge.
+Warning: Vehicle '9_train_S3:2' is not allowed to depart on any lane of its first edge.
+Warning: Vehicle '10_train_S3:3' is not allowed to depart on any lane of its first edge.

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/18/19 10:19:08 by Eclipse SUMO netedit Version 1.3.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <processing>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+    <netedit>
+        <route-files value="C:\Users\camil\Sumo\2019-09-16-14-49-50\types.xml"/>
+    </netedit>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="veh_passenger" vClass="passenger"/>
+	<vType id="bike_bicycle" vClass="bicycle"/>
+	<vType id="ship_ship" vClass="ship"/>
+	<vType id="tram_tram" vClass="tram"/>
+	<vType id="pt_tram" vClass="tram"/>
+	<vType id="moto_motorcycle" vClass="motorcycle"/>
+	<vType id="truck_truck" vClass="truck"/>
+	<vType id="urban_rail_urban" vClass="rail"/>
+	<vType id="rail_rail" vClass="rail"/>
+</routes>

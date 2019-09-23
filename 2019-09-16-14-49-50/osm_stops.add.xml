@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/16/19 14:50:00 by Eclipse SUMO netconvert Version 1.3.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvert.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvertUrbanDe.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvertPedestrians.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvertShips.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvertBicycle.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <pedestrian>
+        <crossings.guess value="true"/>
+    </pedestrian>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-1821850705" name="Waldstraße" lane="-171091369#16_0" startPos="1155.32" endPos="1180.32" friendlyPos="true"/>
+    <busStop id="-1844135106" name="Mühlweg" lane="-173640272#1_0" startPos="108.10" endPos="133.10" friendlyPos="true">
+        <access lane="26489577#8_0" pos="0.38" length="28.34" friendlyPos="1"/>
+        <access lane="26489577#9_0" pos="7.05" length="21.27" friendlyPos="1"/>
+        <access lane="272111660#0_0" pos="3.33" length="17.78" friendlyPos="1"/>
+        <access lane="31091036#5_0" pos="36.24" length="18.95" friendlyPos="1"/>
+        <access lane="441521967#2_0" pos="18.37" length="23.63" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-1844135182" name="Westendsiedlung" lane="-144077985_0" startPos="373.30" endPos="398.30" friendlyPos="true">
+        <access lane="26489713#2_0" pos="4.62" length="37.90" friendlyPos="1"/>
+        <access lane="26489742#0_0" pos="0.00" length="23.74" friendlyPos="1"/>
+        <access lane="272111658#0_0" pos="2.85" length="37.99" friendlyPos="1"/>
+        <access lane="31091036#10_0" pos="23.79" length="18.29" friendlyPos="1"/>
+        <access lane="38095774#4_0" pos="8.89" length="34.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-1883458398" name="S Friedrichshagen" lane="-107704578_0" startPos="20.22" endPos="45.22" friendlyPos="true">
+        <access lane="-520100576#1_0" pos="0.00" length="11.91" friendlyPos="1"/>
+        <access lane="-594582762_0" pos="12.90" length="11.91" friendlyPos="1"/>
+        <access lane="520100576#1_0" pos="21.54" length="9.99" friendlyPos="1"/>
+        <access lane="594582762_0" pos="0.00" length="9.99" friendlyPos="1"/>
+        <access lane="594582763_0" pos="0.00" length="26.03" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-1883465386" name="Josef-Nawrocki-Straße" lane="-288073818_0" startPos="243.05" endPos="268.05" friendlyPos="true">
+        <access lane="-25000113#4_0" pos="15.71" length="4.93" friendlyPos="1"/>
+        <access lane="-25000113#5_0" pos="54.46" length="38.47" friendlyPos="1"/>
+        <access lane="-371242755_0" pos="122.63" length="37.81" friendlyPos="1"/>
+        <access lane="25000113#4_0" pos="48.25" length="9.17" friendlyPos="1"/>
+        <access lane="371242755_0" pos="0.00" length="30.92" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-1883472920" name="Bruno-Wille-Straße" lane="-288073821_0" startPos="52.70" endPos="77.70" friendlyPos="true">
+        <access lane="-25000113#11_0" pos="42.78" length="5.73" friendlyPos="1"/>
+        <access lane="-25016103#0_0" pos="55.54" length="71.62" friendlyPos="1"/>
+        <access lane="25000113#11_0" pos="59.61" length="8.37" friendlyPos="1"/>
+        <access lane="25016103#0_0" pos="0.41" length="84.22" friendlyPos="1"/>
+        <access lane="26806079_0" pos="46.26" length="70.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-1883484180" name="Bruno-Wille-Straße" lane="-288073812_0" startPos="23.35" endPos="48.35" friendlyPos="true">
+        <access lane="-25000113#11_0" pos="13.55" length="9.17" friendlyPos="1"/>
+        <access lane="-25016103#0_0" pos="55.94" length="30.35" friendlyPos="1"/>
+        <access lane="25000113#11_0" pos="89.69" length="4.93" friendlyPos="1"/>
+        <access lane="25016103#0_0" pos="0.00" length="42.38" friendlyPos="1"/>
+        <access lane="26806079_0" pos="46.26" length="25.85" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-1906474291" name="Hirschgarten" lane="-173640266_0" startPos="21.69" endPos="46.69" friendlyPos="true">
+        <access lane="173640273#2_0" pos="15.02" length="24.33" friendlyPos="1"/>
+        <access lane="173640273#3_0" pos="0.00" length="31.03" friendlyPos="1"/>
+        <access lane="193875645#0_0" pos="5.31" length="15.18" friendlyPos="1"/>
+        <access lane="283006413#0_0" pos="5.53" length="31.26" friendlyPos="1"/>
+        <access lane="310306839#3_0" pos="44.03" length="37.58" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-253943340" name="S Friedrichshagen" lane="-171091369#0_0" startPos="0.00" endPos="7.29" friendlyPos="true">
+        <access lane="-31094587#3_0" pos="53.31" length="16.39" friendlyPos="1"/>
+        <access lane="283006421#2_0" pos="11.85" length="11.65" friendlyPos="1"/>
+        <access lane="304398009#2_0" pos="11.80" length="7.53" friendlyPos="1"/>
+        <access lane="31094587#3_0" pos="0.00" length="21.08" friendlyPos="1"/>
+        <access lane="456662394_0" pos="1.86" length="9.26" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-253943345" name="Brösener Straße" lane="-298357088#9_0" startPos="5.60" endPos="30.60" friendlyPos="true">
+        <access lane="-130796740#3_0" pos="18.46" length="10.72" friendlyPos="1"/>
+        <access lane="-31306520#4_0" pos="18.58" length="16.01" friendlyPos="1"/>
+        <access lane="128022901#2_0" pos="18.47" length="19.22" friendlyPos="1"/>
+        <access lane="130796740#3_0" pos="18.01" length="15.52" friendlyPos="1"/>
+        <access lane="395851892#2_0" pos="0.20" length="30.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-253943361" name="Waldstraße" lane="-298357088#0_0" startPos="989.97" endPos="1014.97" friendlyPos="true"/>
+    <busStop id="-3022831712" name="Rahnsdorfer Straße" lane="-298357088#0_0" startPos="2090.72" endPos="2115.72" friendlyPos="true"/>
+    <busStop id="-349055083" name="Hartlebenstraße" lane="-25000105#1_0" startPos="0.90" endPos="25.90" friendlyPos="true">
+        <access lane="-25194874#2_0" pos="0.00" length="27.11" friendlyPos="1"/>
+        <access lane="23463724#0_0" pos="0.00" length="17.20" friendlyPos="1"/>
+        <access lane="23463724#1_0" pos="0.00" length="42.22" friendlyPos="1"/>
+        <access lane="25194874#2_0" pos="13.32" length="38.77" friendlyPos="1"/>
+        <access lane="432116461#3_0" pos="14.09" length="17.90" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3890748363" name="Ahornallee" lane="-180203313_0" startPos="115.33" endPos="140.33" friendlyPos="true">
+        <access lane="-283006414#2_0" pos="8.84" length="11.91" friendlyPos="1"/>
+        <access lane="-37452300_0" pos="155.70" length="25.42" friendlyPos="1"/>
+        <access lane="151237803#3_0" pos="12.26" length="24.87" friendlyPos="1"/>
+        <access lane="283006414#2_0" pos="129.76" length="6.69" friendlyPos="1"/>
+        <access lane="37452300_0" pos="0.00" length="21.02" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3890748364" name="Ahornallee" lane="-283006414#2_2" startPos="34.02" endPos="49.02" friendlyPos="true" lines="N67"/>
+    <busStop id="-3890748369" name="Drachholzstraße" lane="-283006412#5_2" startPos="30.40" endPos="45.40" friendlyPos="true" lines="N67"/>
+    <busStop id="-3890748371" name="Drachholzstraße" lane="-107704595_0" startPos="151.70" endPos="176.70" friendlyPos="true">
+        <access lane="-283006412#5_0" pos="0.00" length="61.87" friendlyPos="1"/>
+        <access lane="-283006412#6_0" pos="56.85" length="10.33" friendlyPos="1"/>
+        <access lane="283006412#5_0" pos="148.68" length="61.38" friendlyPos="1"/>
+        <access lane="283006412#6_0" pos="35.67" length="6.77" friendlyPos="1"/>
+        <access lane="460345888_0" pos="0.00" length="59.14" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3890748374" name="Josef-Nawrocki-Straße" lane="-288073818_0" startPos="205.00" endPos="230.00" friendlyPos="true">
+        <access lane="-25000113#4_0" pos="0.00" length="33.73" friendlyPos="1"/>
+        <access lane="-25000113#5_0" pos="41.99" length="5.24" friendlyPos="1"/>
+        <access lane="-371242755_0" pos="122.63" length="26.10" friendlyPos="1"/>
+        <access lane="25000113#5_0" pos="12.47" length="8.86" friendlyPos="1"/>
+        <access lane="371242755_0" pos="0.00" length="33.10" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3890748380" name="Marktplatz Friedrichshagen" lane="-30689379#1_0" startPos="230.81" endPos="255.81" friendlyPos="true">
+        <access lane="-124907822_0" pos="0.00" length="18.26" friendlyPos="1"/>
+        <access lane="-30689380#0_0" pos="0.00" length="5.95" friendlyPos="1"/>
+        <access lane="-30689380#1_0" pos="16.65" length="19.59" friendlyPos="1"/>
+        <access lane="124907822_0" pos="37.24" length="10.57" friendlyPos="1"/>
+        <access lane="30689380#0_0" pos="37.41" length="12.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3890748385" name="Müggelseedamm/Bölschestraße" lane="-30689379#0_0" startPos="0.00" endPos="13.26" friendlyPos="true">
+        <access lane="675103981#1_0" pos="82.87" length="16.40" friendlyPos="1"/>
+        <access lane="682460124#0_0" pos="6.93" length="6.89" friendlyPos="1"/>
+        <access lane="682460124#1_0" pos="0.75" length="3.91" friendlyPos="1"/>
+        <access lane="682460125#1_0" pos="74.87" length="0.02" friendlyPos="1"/>
+        <access lane="682460125#2_0" pos="0.00" length="5.62" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3890748387" name="Mühlweg" lane="-31091036#5_0" startPos="36.85" endPos="50.91" friendlyPos="true" lines="N67">
+        <access lane="31091036#4_0" pos="110.83" length="15.31" friendlyPos="1"/>
+        <access lane="31091036#5_0" pos="4.06" length="7.05" friendlyPos="1"/>
+        <access lane="444314513_0" pos="1.28" length="9.42" friendlyPos="1"/>
+        <access lane="444314514#0_0" pos="0.00" length="11.38" friendlyPos="1"/>
+        <access lane="444314514#1_0" pos="0.00" length="15.64" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3890748392" name="S Friedrichshagen" lane="-594582763_1" startPos="0.00" endPos="7.22" friendlyPos="true" lines="N67">
+        <access lane="-594582762_0" pos="0.00" length="8.84" friendlyPos="1"/>
+        <access lane="-9628124#0_0" pos="8.45" length="15.73" friendlyPos="1"/>
+        <access lane="594582762_0" pos="12.90" length="13.54" friendlyPos="1"/>
+        <access lane="594582763_0" pos="0.00" length="13.54" friendlyPos="1"/>
+        <access lane="9628124#0_0" pos="0.00" length="18.60" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3890748401" name="Westendsiedlung" lane="-31091036#10_0" startPos="36.40" endPos="51.40" friendlyPos="true" lines="N67">
+        <access lane="26489742#0_0" pos="0.00" length="19.15" friendlyPos="1"/>
+        <access lane="272111657#0_0" pos="0.00" length="13.63" friendlyPos="1"/>
+        <access lane="272111657#1_0" pos="0.00" length="14.44" friendlyPos="1"/>
+        <access lane="31091036#10_0" pos="5.28" length="7.05" friendlyPos="1"/>
+        <access lane="31091036#9_0" pos="25.21" length="16.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3986514157" name="Brösener Straße" lane="-171091369#7_0" startPos="2.64" endPos="27.64" friendlyPos="true">
+        <access lane="-130796740#3_0" pos="15.13" length="7.03" friendlyPos="1"/>
+        <access lane="-31306520#4_0" pos="15.27" length="19.75" friendlyPos="1"/>
+        <access lane="128022901#2_0" pos="15.14" length="22.91" friendlyPos="1"/>
+        <access lane="130796740#3_0" pos="21.33" length="11.83" friendlyPos="1"/>
+        <access lane="395851892#2_0" pos="0.00" length="35.92" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3986514162" name="S Friedrichshagen" lane="-298357088#17_0" startPos="67.58" endPos="92.58" friendlyPos="true">
+        <access lane="-31094587#5_0" pos="4.61" length="19.08" friendlyPos="1"/>
+        <access lane="-37849738#5_0" pos="0.00" length="16.71" friendlyPos="1"/>
+        <access lane="-37849738#6_0" pos="29.49" length="10.21" friendlyPos="1"/>
+        <access lane="31094587#5_0" pos="39.09" length="14.28" friendlyPos="1"/>
+        <access lane="37849738#6_0" pos="3.48" length="25.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3986514164" name="Goethepark" lane="-298357088#0_0" startPos="1566.38" endPos="1591.38" friendlyPos="true"/>
+    <busStop id="-3986514165" name="Goethepark" lane="-171091369#16_0" startPos="572.56" endPos="597.56" friendlyPos="true"/>
+    <busStop id="-3986514169" name="Rahnsdorfer Straße" lane="-171091369#16_0" startPos="46.95" endPos="71.95" friendlyPos="true"/>
+    <busStop id="1106283745" name="S Friedrichshagen" lane="25375158_0" startPos="35.78" endPos="162.72" friendlyPos="true" lines="S3">
+        <access lane="25799267#2_0" pos="50.64" length="74.28" friendlyPos="1"/>
+        <access lane="31307013_0" pos="39.42" length="104.58" friendlyPos="1"/>
+        <access lane="31307015#2_0" pos="55.74" length="109.91" friendlyPos="1"/>
+        <access lane="31307015#3_0" pos="2.00" length="107.24" friendlyPos="1"/>
+        <access lane="411109964_0" pos="121.03" length="52.36" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1106283762" name="S Friedrichshagen" lane="29180567_0" startPos="95.88" endPos="207.08" friendlyPos="true" lines="S3">
+        <access lane="31306707_0" pos="12.47" length="13.43" friendlyPos="1"/>
+        <access lane="399442949#0_0" pos="0.10" length="22.73" friendlyPos="1"/>
+        <access lane="399442949#1_0" pos="8.79" length="2.30" friendlyPos="1"/>
+        <access lane="411109963#1_0" pos="2.62" length="35.11" friendlyPos="1"/>
+        <access lane="504300807_0" pos="19.76" length="19.69" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1821850705" name="Waldstraße" lane="171091369#16_0" startPos="1006.32" endPos="1031.32" friendlyPos="true"/>
+    <busStop id="1823188105" name="Fürstenwalder Damm" lane="171257556#1_0" startPos="361.97" endPos="386.97" friendlyPos="true" lines="61">
+        <access lane="-171257632#1_0" pos="0.00" length="26.49" friendlyPos="1"/>
+        <access lane="-339319748#0_0" pos="374.33" length="23.23" friendlyPos="1"/>
+        <access lane="171257632#0_0" pos="2.14" length="23.00" friendlyPos="1"/>
+        <access lane="339319748#0_0" pos="6.12" length="26.23" friendlyPos="1"/>
+        <access lane="724688434#0_0" pos="0.00" length="29.78" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1823188120" name="Fürstenwalder Damm/Müggelseedamm" lane="171257621#0_0" startPos="64.02" endPos="89.02" friendlyPos="true" lines="61">
+        <access lane="-174786229#4_0" pos="456.35" length="13.27" friendlyPos="1"/>
+        <access lane="-342544712#0_0" pos="330.87" length="20.65" friendlyPos="1"/>
+        <access lane="174786229#4_0" pos="0.00" length="8.70" friendlyPos="1"/>
+        <access lane="31091054#1_0" pos="6.32" length="12.28" friendlyPos="1"/>
+        <access lane="342544712#0_0" pos="0.00" length="18.27" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1823188126" name="Hartlebenstraße" lane="171257624#0_0" startPos="192.46" endPos="217.46" friendlyPos="true" lines="61">
+        <access lane="-25194874#2_0" pos="0.00" length="32.48" friendlyPos="1"/>
+        <access lane="23463724#1_0" pos="8.68" length="7.10" friendlyPos="1"/>
+        <access lane="25194874#2_0" pos="13.32" length="20.82" friendlyPos="1"/>
+        <access lane="384630168#1_0" pos="10.68" length="34.56" friendlyPos="1"/>
+        <access lane="432116461#2_0" pos="328.75" length="16.40" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1823188151" name="Licht- und Luftbad Müggelsee" lane="171257542_0" startPos="1005.63" endPos="1030.63" friendlyPos="true" lines="61">
+        <access lane="-174786229#4_0" pos="0.00" length="200.09" friendlyPos="1"/>
+        <access lane="-297984310_0" pos="561.14" length="41.22" friendlyPos="1"/>
+        <access lane="174786229#4_0" pos="454.63" length="199.41" friendlyPos="1"/>
+        <access lane="297984310_0" pos="1097.79" length="36.42" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1823189305" name="Strandbad Müggelsee" lane="171257542_0" startPos="511.87" endPos="536.87" friendlyPos="true" lines="61">
+        <access lane="-297984310_0" pos="1056.94" length="47.98" friendlyPos="1"/>
+        <access lane="297984310_0" pos="602.15" length="43.18" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1823189338" name="Wasserwerk Friedrichshagen" lane="171257556#5_0" startPos="90.10" endPos="114.89" friendlyPos="true" lines="61">
+        <access lane="-26396111#3_0" pos="0.49" length="20.92" friendlyPos="1"/>
+        <access lane="-26396111#4_0" pos="4.99" length="26.42" friendlyPos="1"/>
+        <access lane="26396111#3_0" pos="0.00" length="25.06" friendlyPos="1"/>
+        <access lane="264945980#1_0" pos="8.58" length="15.98" friendlyPos="1"/>
+        <access lane="432116461#0_0" pos="97.32" length="15.49" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1844135106" name="Mühlweg" lane="173640272#1_0" startPos="146.23" endPos="171.23" friendlyPos="true" lines="60">
+        <access lane="26489577#8_0" pos="0.38" length="28.34" friendlyPos="1"/>
+        <access lane="26489577#9_0" pos="7.05" length="21.27" friendlyPos="1"/>
+        <access lane="272111660#0_0" pos="3.33" length="17.78" friendlyPos="1"/>
+        <access lane="31091036#5_0" pos="36.24" length="18.95" friendlyPos="1"/>
+        <access lane="441521967#2_0" pos="18.37" length="23.63" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1844135181" name="Wassersportzentrum" lane="144077980#3_0" startPos="34.61" endPos="59.61" friendlyPos="true" lines="61">
+        <access lane="-479315064_0" pos="0.00" length="53.12" friendlyPos="1"/>
+        <access lane="331318342#2_0" pos="94.57" length="25.25" friendlyPos="1"/>
+        <access lane="331318342#3_0" pos="0.00" length="67.50" friendlyPos="1"/>
+        <access lane="38095759#2_0" pos="97.54" length="35.05" friendlyPos="1"/>
+        <access lane="479315064_0" pos="13.35" length="49.19" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1844135182" name="Westendsiedlung" lane="144077985_0" startPos="199.50" endPos="224.50" friendlyPos="true" lines="60">
+        <access lane="26489713#2_0" pos="4.62" length="37.90" friendlyPos="1"/>
+        <access lane="26489742#0_0" pos="0.00" length="23.74" friendlyPos="1"/>
+        <access lane="272111658#0_0" pos="2.85" length="37.99" friendlyPos="1"/>
+        <access lane="31091036#10_0" pos="23.79" length="18.29" friendlyPos="1"/>
+        <access lane="38095774#4_0" pos="8.89" length="34.96" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1851988093" name="S Hirschgarten" lane="174528747_0" startPos="31.33" endPos="131.33" friendlyPos="true" lines="S3">
+        <access lane="25799297#4_0" pos="80.62" length="71.96" friendlyPos="1"/>
+        <access lane="37452301#1_0" pos="67.66" length="9.27" friendlyPos="1"/>
+        <access lane="37452301#2_0" pos="0.00" length="72.09" friendlyPos="1"/>
+        <access lane="37452317#0_0" pos="0.00" length="70.72" friendlyPos="1"/>
+        <access lane="37489628_0" pos="13.38" length="92.75" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1883458398" name="S Friedrichshagen" lane="107704578_0" startPos="24.23" endPos="49.23" friendlyPos="true" lines="60 61">
+        <access lane="-520100576#1_0" pos="0.00" length="11.91" friendlyPos="1"/>
+        <access lane="-594582762_0" pos="12.90" length="11.91" friendlyPos="1"/>
+        <access lane="520100576#1_0" pos="21.54" length="9.99" friendlyPos="1"/>
+        <access lane="594582762_0" pos="0.00" length="9.99" friendlyPos="1"/>
+        <access lane="594582763_0" pos="0.00" length="26.03" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1883465386" name="Josef-Nawrocki-Straße" lane="288073818_0" startPos="133.41" endPos="158.41" friendlyPos="true" lines="60">
+        <access lane="-25000113#4_0" pos="15.71" length="4.93" friendlyPos="1"/>
+        <access lane="-25000113#5_0" pos="54.46" length="38.47" friendlyPos="1"/>
+        <access lane="-371242755_0" pos="122.63" length="37.81" friendlyPos="1"/>
+        <access lane="25000113#4_0" pos="48.25" length="9.17" friendlyPos="1"/>
+        <access lane="371242755_0" pos="0.00" length="30.92" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1883472919" name="Altes Wasserwerk" lane="171257586_0" startPos="178.00" endPos="190.50" friendlyPos="true" lines="60">
+        <access lane="-723757589#0_0" pos="0.00" length="69.02" friendlyPos="1"/>
+        <access lane="-723757589#1_0" pos="65.23" length="2.01" friendlyPos="1"/>
+        <access lane="143681196#0_0" pos="0.00" length="66.45" friendlyPos="1"/>
+        <access lane="457284537#0_0" pos="38.85" length="32.40" friendlyPos="1"/>
+        <access lane="723757589#1_0" pos="36.99" length="10.59" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1883472920" name="Bruno-Wille-Straße" lane="288073821_0" startPos="7.02" endPos="32.02" friendlyPos="true" lines="60">
+        <access lane="-25000113#11_0" pos="42.78" length="5.73" friendlyPos="1"/>
+        <access lane="-25016103#0_0" pos="55.54" length="71.62" friendlyPos="1"/>
+        <access lane="25000113#11_0" pos="59.61" length="8.37" friendlyPos="1"/>
+        <access lane="25016103#0_0" pos="0.41" length="84.22" friendlyPos="1"/>
+        <access lane="26806079_0" pos="46.26" length="70.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1883473003" name="Altes Wasserwerk" lane="177947398#0_0" startPos="56.45" endPos="81.45" friendlyPos="true">
+        <access lane="-457284539#1_0" pos="24.36" length="27.79" friendlyPos="1"/>
+        <access lane="457284537#0_0" pos="110.06" length="30.97" friendlyPos="1"/>
+        <access lane="457284537#1_0" pos="9.47" length="15.72" friendlyPos="1"/>
+        <access lane="457284537#2_0" pos="0.00" length="18.11" friendlyPos="1"/>
+        <access lane="457284541_0" pos="0.00" length="30.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1883484180" name="Bruno-Wille-Straße" lane="288073812_0" startPos="36.87" endPos="61.87" friendlyPos="true" lines="60">
+        <access lane="-25000113#11_0" pos="13.55" length="9.17" friendlyPos="1"/>
+        <access lane="-25016103#0_0" pos="55.94" length="30.35" friendlyPos="1"/>
+        <access lane="25000113#11_0" pos="89.69" length="4.93" friendlyPos="1"/>
+        <access lane="25016103#0_0" pos="0.00" length="42.38" friendlyPos="1"/>
+        <access lane="26806079_0" pos="46.26" length="25.85" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1883502289" name="Spreestraße" lane="144077980#0_0" startPos="10.71" endPos="35.71" friendlyPos="true" lines="61">
+        <access lane="-26280372_0" pos="147.46" length="102.83" friendlyPos="1"/>
+        <access lane="331318342#8_0" pos="85.35" length="25.41" friendlyPos="1"/>
+        <access lane="410646532#0_0" pos="0.00" length="25.53" friendlyPos="1"/>
+        <access lane="410646532#1_0" pos="0.00" length="97.52" friendlyPos="1"/>
+        <access lane="505734194#0_0" pos="5.78" length="90.52" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1906474291" name="Hirschgarten" lane="173640266_0" startPos="35.87" endPos="60.87" friendlyPos="true" lines="60 61">
+        <access lane="173640273#2_0" pos="15.02" length="24.33" friendlyPos="1"/>
+        <access lane="173640273#3_0" pos="0.00" length="31.03" friendlyPos="1"/>
+        <access lane="193875645#0_0" pos="5.31" length="15.18" friendlyPos="1"/>
+        <access lane="283006413#0_0" pos="5.53" length="31.26" friendlyPos="1"/>
+        <access lane="310306839#3_0" pos="44.03" length="37.58" friendlyPos="1"/>
+    </busStop>
+    <busStop id="253943340" name="S Friedrichshagen" lane="171091369#0_0" startPos="0.00" endPos="12.23" friendlyPos="true">
+        <access lane="-31094587#3_0" pos="53.31" length="16.39" friendlyPos="1"/>
+        <access lane="283006421#2_0" pos="11.85" length="11.65" friendlyPos="1"/>
+        <access lane="304398009#2_0" pos="11.80" length="7.53" friendlyPos="1"/>
+        <access lane="31094587#3_0" pos="0.00" length="21.08" friendlyPos="1"/>
+        <access lane="456662394_0" pos="1.86" length="9.26" friendlyPos="1"/>
+    </busStop>
+    <busStop id="253943345" name="Brösener Straße" lane="298357088#9_0" startPos="9.62" endPos="34.62" friendlyPos="true">
+        <access lane="-130796740#3_0" pos="18.46" length="10.72" friendlyPos="1"/>
+        <access lane="-31306520#4_0" pos="18.58" length="16.01" friendlyPos="1"/>
+        <access lane="128022901#2_0" pos="18.47" length="19.22" friendlyPos="1"/>
+        <access lane="130796740#3_0" pos="18.01" length="15.52" friendlyPos="1"/>
+        <access lane="395851892#2_0" pos="0.20" length="30.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="253943361" name="Waldstraße" lane="298357088#0_0" startPos="1164.96" endPos="1189.96" friendlyPos="true"/>
+    <busStop id="253943504" name="Fürstenwalder Damm/Müggelseedamm" lane="143742582#0_0" startPos="19.53" endPos="44.53" friendlyPos="true" lines="61">
+        <access lane="-279808666#1_0" pos="265.63" length="39.38" friendlyPos="1"/>
+        <access lane="-339319748#1_0" pos="53.63" length="18.13" friendlyPos="1"/>
+        <access lane="279808666#1_0" pos="73.18" length="34.58" friendlyPos="1"/>
+        <access lane="31091054#5_0" pos="56.26" length="18.37" friendlyPos="1"/>
+        <access lane="339319748#1_0" pos="284.37" length="21.13" friendlyPos="1"/>
+    </busStop>
+    <busStop id="253943512" name="Licht- und Luftbad Müggelsee" lane="143742579_0" startPos="514.84" endPos="539.84" friendlyPos="true" lines="61">
+        <access lane="-174786229#4_0" pos="0.00" length="231.87" friendlyPos="1"/>
+        <access lane="-297984310_0" pos="582.11" length="36.43" friendlyPos="1"/>
+        <access lane="174786229#4_0" pos="454.63" length="231.16" friendlyPos="1"/>
+        <access lane="297984310_0" pos="1076.83" length="31.63" friendlyPos="1"/>
+    </busStop>
+    <busStop id="253943514" name="Strandbad Müggelsee" lane="143742579_0" startPos="1005.23" endPos="1030.23" friendlyPos="true" lines="61">
+        <access lane="-297984310_0" pos="1074.40" length="43.51" friendlyPos="1"/>
+        <access lane="297984310_0" pos="584.69" length="38.71" friendlyPos="1"/>
+    </busStop>
+    <busStop id="254100382" name="Fürstenwalder Damm" lane="143742581#5_0" startPos="228.84" endPos="253.84" friendlyPos="true" lines="61">
+        <access lane="-171257632#1_0" pos="0.00" length="37.37" friendlyPos="1"/>
+        <access lane="-724688434#0_0" pos="76.91" length="40.60" friendlyPos="1"/>
+        <access lane="171257632#0_0" pos="2.14" length="42.11" friendlyPos="1"/>
+        <access lane="264945980#6_0" pos="139.76" length="18.26" friendlyPos="1"/>
+        <access lane="724688434#0_0" pos="0.00" length="45.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="271779546" name="Spreestraße" lane="25307900#0_0" startPos="11.26" endPos="36.26" friendlyPos="true" lines="61">
+        <access lane="25016107_0" pos="30.23" length="89.76" friendlyPos="1"/>
+        <access lane="331318342#8_0" pos="86.69" length="72.09" friendlyPos="1"/>
+        <access lane="410646532#0_0" pos="45.69" length="20.62" friendlyPos="1"/>
+        <access lane="410646532#1_0" pos="0.00" length="31.36" friendlyPos="1"/>
+        <access lane="505734194#0_0" pos="2.76" length="19.98" friendlyPos="1"/>
+    </busStop>
+    <busStop id="2770436588" name="Westendsiedlung" lane="272111657#0_0" startPos="0.00" endPos="5.55" friendlyPos="true"/>
+    <busStop id="3022831712" name="Rahnsdorfer Straße" lane="298357088#0_0" startPos="64.21" endPos="89.21" friendlyPos="true"/>
+    <busStop id="319242587" name="S Hirschgarten" lane="174528751_0" startPos="81.84" endPos="191.40" friendlyPos="true" lines="S3">
+        <access lane="-294991110#0_0" pos="101.81" length="41.66" friendlyPos="1"/>
+        <access lane="217390581#0_0" pos="18.82" length="35.85" friendlyPos="1"/>
+        <access lane="25799297#4_0" pos="171.78" length="50.96" friendlyPos="1"/>
+        <access lane="294991110#0_0" pos="34.72" length="36.86" friendlyPos="1"/>
+        <access lane="90212653_0" pos="125.27" length="51.29" friendlyPos="1"/>
+    </busStop>
+    <busStop id="349047807" name="Hirschgarten" lane="144077983_0" startPos="50.61" endPos="75.61" friendlyPos="true" lines="60 61">
+        <access lane="173640273#1_0" pos="14.28" length="27.62" friendlyPos="1"/>
+        <access lane="173640273#2_0" pos="0.00" length="34.00" friendlyPos="1"/>
+        <access lane="231949717#0_0" pos="7.55" length="25.23" friendlyPos="1"/>
+        <access lane="283006413#0_0" pos="33.95" length="26.90" friendlyPos="1"/>
+        <access lane="283006413#1_0" pos="0.00" length="34.87" friendlyPos="1"/>
+    </busStop>
+    <busStop id="349047810" name="Westendsiedlung" lane="93704177#1_0" startPos="115.11" endPos="140.11" friendlyPos="true" lines="60">
+        <access lane="26489713#2_0" pos="5.16" length="34.01" friendlyPos="1"/>
+        <access lane="26489742#0_0" pos="0.00" length="22.80" friendlyPos="1"/>
+        <access lane="272111658#0_0" pos="5.45" length="38.04" friendlyPos="1"/>
+        <access lane="31091036#10_0" pos="23.75" length="22.27" friendlyPos="1"/>
+        <access lane="38095774#4_0" pos="6.70" length="32.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="349047813" name="Mühlweg" lane="93704167#0_0" startPos="108.36" endPos="133.36" friendlyPos="true" lines="60">
+        <access lane="26489577#8_0" pos="0.38" length="25.13" friendlyPos="1"/>
+        <access lane="26489577#9_0" pos="6.98" length="17.09" friendlyPos="1"/>
+        <access lane="272111660#0_0" pos="8.97" length="17.58" friendlyPos="1"/>
+        <access lane="31091036#5_0" pos="36.27" length="23.13" friendlyPos="1"/>
+        <access lane="441521967#2_0" pos="18.37" length="27.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="349050439" name="Wassersportzentrum" lane="144077982#2_0" startPos="127.26" endPos="145.55" friendlyPos="true" lines="61">
+        <access lane="217386899#0_0" pos="0.00" length="10.98" friendlyPos="1"/>
+        <access lane="26489720#0_0" pos="0.49" length="10.18" friendlyPos="1"/>
+        <access lane="26489720#2_0" pos="0.00" length="8.68" friendlyPos="1"/>
+        <access lane="26489720#3_0" pos="0.00" length="10.52" friendlyPos="1"/>
+        <access lane="331318342#3_0" pos="0.00" length="22.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="349055083" name="Hartlebenstraße" lane="25000105#1_0" startPos="431.25" endPos="456.25" friendlyPos="true" lines="61">
+        <access lane="-25194874#2_0" pos="0.00" length="27.11" friendlyPos="1"/>
+        <access lane="23463724#0_0" pos="0.00" length="17.20" friendlyPos="1"/>
+        <access lane="23463724#1_0" pos="0.00" length="42.22" friendlyPos="1"/>
+        <access lane="25194874#2_0" pos="13.32" length="38.77" friendlyPos="1"/>
+        <access lane="432116461#3_0" pos="14.09" length="17.90" friendlyPos="1"/>
+    </busStop>
+    <busStop id="349055255" name="Altes Wasserwerk" lane="385907618#0_0" startPos="0.00" endPos="12.50" friendlyPos="true" lines="60">
+        <access lane="-457284539#1_0" pos="21.79" length="19.66" friendlyPos="1"/>
+        <access lane="150937110#1_0" pos="8.20" length="34.59" friendlyPos="1"/>
+        <access lane="457284537#1_0" pos="11.14" length="17.26" friendlyPos="1"/>
+        <access lane="457284537#2_0" pos="1.57" length="13.40" friendlyPos="1"/>
+        <access lane="457284539#1_0" pos="33.75" length="24.46" friendlyPos="1"/>
+    </busStop>
+    <busStop id="349058473" name="Ahornallee" lane="173640262_0" startPos="140.85" endPos="165.85" friendlyPos="true" lines="60">
+        <access lane="-283006414#2_0" pos="35.76" length="6.93" friendlyPos="1"/>
+        <access lane="151237803#3_0" pos="12.26" length="63.07" friendlyPos="1"/>
+        <access lane="151237817#4_0" pos="92.18" length="53.39" friendlyPos="1"/>
+        <access lane="283006414#2_0" pos="102.84" length="11.67" friendlyPos="1"/>
+        <access lane="37452300_0" pos="0.00" length="60.28" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3890748363" name="Ahornallee" lane="180203313_0" startPos="334.37" endPos="359.37" friendlyPos="true" lines="60">
+        <access lane="-283006414#2_0" pos="8.84" length="11.91" friendlyPos="1"/>
+        <access lane="-37452300_0" pos="155.70" length="25.42" friendlyPos="1"/>
+        <access lane="151237803#3_0" pos="12.26" length="24.87" friendlyPos="1"/>
+        <access lane="283006414#2_0" pos="129.76" length="6.69" friendlyPos="1"/>
+        <access lane="37452300_0" pos="0.00" length="21.02" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3890748365" name="Altes Wasserwerk" lane="25000113#16_1" startPos="35.77" endPos="50.77" friendlyPos="true"/>
+    <busStop id="3890748366" name="Altes Wasserwerk" lane="25000113#16_1" startPos="21.99" endPos="36.99" friendlyPos="true"/>
+    <busStop id="3890748367" name="Bruno-Wille-Straße" lane="25000113#11_1" startPos="56.20" endPos="71.20" friendlyPos="true"/>
+    <busStop id="3890748368" name="Bruno-Wille-Straße" lane="25000113#11_1" startPos="85.62" endPos="100.62" friendlyPos="true"/>
+    <busStop id="3890748370" name="Drachholzstraße" lane="179081032#0_0" startPos="302.34" endPos="327.34" friendlyPos="true" lines="60 61">
+        <access lane="-283006412#5_0" pos="35.30" length="4.49" friendlyPos="1"/>
+        <access lane="-283006412#6_0" pos="92.52" length="60.61" friendlyPos="1"/>
+        <access lane="283006412#5_0" pos="113.38" length="12.61" friendlyPos="1"/>
+        <access lane="283006412#6_0" pos="0.00" length="61.75" friendlyPos="1"/>
+        <access lane="460345888_0" pos="0.00" length="57.41" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3890748371" name="Drachholzstraße" lane="107704595_0" startPos="152.29" endPos="177.29" friendlyPos="true" lines="60 61">
+        <access lane="-283006412#5_0" pos="0.00" length="61.87" friendlyPos="1"/>
+        <access lane="-283006412#6_0" pos="56.85" length="10.33" friendlyPos="1"/>
+        <access lane="283006412#5_0" pos="148.68" length="61.38" friendlyPos="1"/>
+        <access lane="283006412#6_0" pos="35.67" length="6.77" friendlyPos="1"/>
+        <access lane="460345888_0" pos="0.00" length="59.14" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3890748372" name="Drachholzstraße" lane="283006412#6_2" startPos="30.82" endPos="45.82" friendlyPos="true"/>
+    <busStop id="3890748373" name="Josef-Nawrocki-Straße" lane="25000113#5_1" startPos="7.91" endPos="22.91" friendlyPos="true"/>
+    <busStop id="3890748374" name="Josef-Nawrocki-Straße" lane="288073818_0" startPos="171.46" endPos="196.46" friendlyPos="true">
+        <access lane="-25000113#4_0" pos="0.00" length="33.73" friendlyPos="1"/>
+        <access lane="-25000113#5_0" pos="41.99" length="5.24" friendlyPos="1"/>
+        <access lane="-371242755_0" pos="122.63" length="26.10" friendlyPos="1"/>
+        <access lane="25000113#5_0" pos="12.47" length="8.86" friendlyPos="1"/>
+        <access lane="371242755_0" pos="0.00" length="33.10" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3890748375" name="Josef-Nawrocki-Straße" lane="25000113#4_1" startPos="47.24" endPos="62.24" friendlyPos="true"/>
+    <busStop id="3890748377" name="Marktplatz Friedrichshagen" lane="30689380#1_2" startPos="0.00" endPos="14.09" friendlyPos="true" lines="N67"/>
+    <busStop id="3890748378" name="Marktplatz Friedrichshagen" lane="179081032#0_0" startPos="632.93" endPos="657.93" friendlyPos="true" lines="60 61">
+        <access lane="-124907822_0" pos="0.00" length="24.00" friendlyPos="1"/>
+        <access lane="-30689380#0_0" pos="0.80" length="11.66" friendlyPos="1"/>
+        <access lane="124907822_0" pos="37.24" length="16.92" friendlyPos="1"/>
+        <access lane="30689380#0_0" pos="36.61" length="6.94" friendlyPos="1"/>
+        <access lane="30689380#1_0" pos="0.00" length="22.43" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3890748379" name="Marktplatz Friedrichshagen" lane="30689380#0_2" startPos="4.14" endPos="19.14" friendlyPos="true"/>
+    <busStop id="3890748380" name="Marktplatz Friedrichshagen" lane="30689379#1_0" startPos="333.98" endPos="358.98" friendlyPos="true" lines="60 61">
+        <access lane="-124907822_0" pos="0.00" length="18.26" friendlyPos="1"/>
+        <access lane="-30689380#0_0" pos="0.00" length="5.95" friendlyPos="1"/>
+        <access lane="-30689380#1_0" pos="16.65" length="19.59" friendlyPos="1"/>
+        <access lane="124907822_0" pos="37.24" length="10.57" friendlyPos="1"/>
+        <access lane="30689380#0_0" pos="37.41" length="12.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3890748381" name="Müggelseedamm/Bölschestraße" lane="25000113#2_1" startPos="1.31" endPos="16.31" friendlyPos="true"/>
+    <busStop id="3890748382" name="Müggelseedamm/Bölschestraße" lane="179081032#1_0" startPos="21.23" endPos="46.23" friendlyPos="true" lines="60 61">
+        <access lane="638460946_0" pos="44.75" length="18.74" friendlyPos="1"/>
+        <access lane="638460947#0_0" pos="0.00" length="50.89" friendlyPos="1"/>
+        <access lane="675103981#1_0" pos="46.60" length="22.02" friendlyPos="1"/>
+        <access lane="682460124#1_0" pos="32.27" length="0.12" friendlyPos="1"/>
+        <access lane="682460125#1_0" pos="43.35" length="4.27" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3890748385" name="Müggelseedamm/Bölschestraße" lane="30689379#0_0" startPos="16.44" endPos="31.18" friendlyPos="true" lines="60 61">
+        <access lane="675103981#1_0" pos="82.87" length="16.40" friendlyPos="1"/>
+        <access lane="682460124#0_0" pos="6.93" length="6.89" friendlyPos="1"/>
+        <access lane="682460124#1_0" pos="0.75" length="3.91" friendlyPos="1"/>
+        <access lane="682460125#1_0" pos="74.87" length="0.02" friendlyPos="1"/>
+        <access lane="682460125#2_0" pos="0.00" length="5.62" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3890748391" name="S Friedrichshagen" lane="179081032#0_0" startPos="11.33" endPos="36.33" friendlyPos="true" lines="60 61">
+        <access lane="-594582762_0" pos="0.00" length="6.10" friendlyPos="1"/>
+        <access lane="-9628124#0_0" pos="8.45" length="15.23" friendlyPos="1"/>
+        <access lane="594582762_0" pos="12.90" length="16.03" friendlyPos="1"/>
+        <access lane="594582763_0" pos="0.00" length="16.26" friendlyPos="1"/>
+        <access lane="9628124#0_0" pos="0.00" length="21.08" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3892451596" name="Hirschgarten" lane="283006413#0_2" startPos="4.60" endPos="19.60" friendlyPos="true" lines="N67"/>
+    <busStop id="3892451597" name="Hirschgarten" lane="173640273#2_2" startPos="11.24" endPos="25.26" friendlyPos="true" lines="N67"/>
+    <busStop id="3986514157" name="Brösener Straße" lane="171091369#7_0" startPos="11.40" endPos="36.40" friendlyPos="true">
+        <access lane="-130796740#3_0" pos="15.13" length="7.03" friendlyPos="1"/>
+        <access lane="-31306520#4_0" pos="15.27" length="19.75" friendlyPos="1"/>
+        <access lane="128022901#2_0" pos="15.14" length="22.91" friendlyPos="1"/>
+        <access lane="130796740#3_0" pos="21.33" length="11.83" friendlyPos="1"/>
+        <access lane="395851892#2_0" pos="0.00" length="35.92" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3986514162" name="S Friedrichshagen" lane="298357088#17_0" startPos="84.06" endPos="109.06" friendlyPos="true">
+        <access lane="-31094587#5_0" pos="4.61" length="19.08" friendlyPos="1"/>
+        <access lane="-37849738#5_0" pos="0.00" length="16.71" friendlyPos="1"/>
+        <access lane="-37849738#6_0" pos="29.49" length="10.21" friendlyPos="1"/>
+        <access lane="31094587#5_0" pos="39.09" length="14.28" friendlyPos="1"/>
+        <access lane="37849738#6_0" pos="3.48" length="25.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3986514164" name="Goethepark" lane="298357088#0_0" startPos="588.55" endPos="613.55" friendlyPos="true"/>
+    <busStop id="3986514165" name="Goethepark" lane="171091369#16_0" startPos="1589.07" endPos="1614.07" friendlyPos="true"/>
+    <busStop id="3986514169" name="Rahnsdorfer Straße" lane="171091369#16_0" startPos="2114.69" endPos="2139.69" friendlyPos="true"/>
+    <busStop id="598350419" name="Wasserwerk Friedrichshagen" lane="143742581#2_0" startPos="31.51" endPos="56.51" friendlyPos="true" lines="61">
+        <access lane="26396185#0_0" pos="17.63" length="19.72" friendlyPos="1"/>
+        <access lane="26396185#1_0" pos="1.11" length="13.74" friendlyPos="1"/>
+        <access lane="264945980#1_0" pos="39.35" length="10.99" friendlyPos="1"/>
+        <access lane="264945980#2_0" pos="0.00" length="20.19" friendlyPos="1"/>
+        <access lane="432116461#0_0" pos="66.49" length="19.62" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6231228616" name="Müggelseedamm/Bölschestraße" lane="25307900#0_0" startPos="565.00" endPos="590.00" friendlyPos="true">
+        <access lane="-25016105_0" pos="44.70" length="44.28" friendlyPos="1"/>
+        <access lane="-331318343#1_0" pos="17.62" length="10.85" friendlyPos="1"/>
+        <access lane="25016105_0" pos="0.74" length="31.70" friendlyPos="1"/>
+        <access lane="331318343#1_0" pos="36.90" length="6.25" friendlyPos="1"/>
+        <access lane="331318343#2_0" pos="0.00" length="47.94" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6391241339" name="Müggelseedamm/Bölschestraße" lane="682460125#1_0" startPos="60.25" endPos="75.25" friendlyPos="true"/>
+    <busStop id="6391241340" name="Müggelseedamm/Bölschestraße" lane="682460124#1_0" startPos="46.59" endPos="61.59" friendlyPos="true"/>
+</additional>
