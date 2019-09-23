@@ -1,7 +1,7 @@
 Montag der 16.09.19:
-- Meeting --> über allgemeinen Themen rund um SUMO
-- Tutorials über SUMO
-- über OSMWebWizard und openStreetMap einen Stadtteil raussuchen und eine Kreuzung bearbeiten
+- Meeting --> Ã¼ber allgemeinen Themen rund um SUMO
+- Tutorials Ã¼ber SUMO
+- Ã¼ber OSMWebWizard und openStreetMap einen Stadtteil raussuchen und eine Kreuzung bearbeiten
 Dienstag der 17.09.19:
 - Meeting --> ob man Vehrkehrsicherheit in SUMO einbinden kann?
 - weiter Kreuzung bearbeiten
@@ -14,8 +14,8 @@ Donnerstag der 19.09.19:
 - Crash's bei der neusten NETEDIT Version finden
 Freitag der 20.09.19:
 - weiter nach Crash's suchen
-- Git kennenlernen und vertehen wozu man es benötigt
+- Git kennenlernen und vertehen wozu man es benÃ¶tigt
 - eigendes Git Hub Profil erstellen
 Montag der 23.09.19:
-- Meeting --> über allgemeine Themen rund um SUMO
+- Meeting --> Ã¼ber allgemeine Themen rund um SUMO
 - mi Git Hub arbeiten (Dateien sichern...)
