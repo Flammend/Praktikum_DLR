@@ -1,0 +1,3 @@
+- once you have opened all the files
+- you define a person to drive from one bus station to another with "rideBusStop"
+- then when you click "Finish ride creation", the program crashes
