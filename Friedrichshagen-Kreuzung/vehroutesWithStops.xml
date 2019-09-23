@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated on 2019-09-19 15:29:21.548345 by $Id$
-  options: -r vehroutes.xml -o vehroutesWithStops.xml -p -n osm.net.xml -d 1800 -t types.xml
+<!-- generated on 2019-09-23 12:46:27.403076 by $Id$
+  options: -n osm.net.xml -r vehroutes.xml -o vehroutesWithStops.xml -t types.xml -d 1800 -p True
 -->
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
 <vehicle arrival="290.00" depart="0.00" departLane="0" id="bike0" type="bike_bicycle">

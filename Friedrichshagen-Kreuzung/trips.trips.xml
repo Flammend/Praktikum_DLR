@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated on 2019-09-18 15:07:38.082915 by $Id$
+<!-- generated on 2019-09-23 12:38:19.791411 by $Id$
   options: -n osm.net.xml -e 3600 -p 600 <doubleminus>random-begin <doubleminus>seed 42 <doubleminus>ptstops osm_stops.add.xml <doubleminus>ptlines osm_ptlines.xml -o osm_pt.rou.xml <doubleminus>ignore-errors <doubleminus>vtype-prefix pt_ <doubleminus>stopinfos-file stopinfos.xml <doubleminus>routes-file vehroutes.xml <doubleminus>trips-file trips.trips.xml <doubleminus>verbose
 -->
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
