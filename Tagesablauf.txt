@@ -1,4 +1,4 @@
-Montag der 16.09.19:
+﻿Montag der 16.09.19:
 - Meeting --> über allgemeinen Themen rund um SUMO
 - Tutorials über SUMO
 - über OSMWebWizard und openStreetMap einen Stadtteil raussuchen und eine Kreuzung bearbeiten
@@ -19,3 +19,7 @@ Freitag der 20.09.19:
 Montag der 23.09.19:
 - Meeting --> über allgemeine Themen rund um SUMO
 - mi Git Hub arbeiten (Dateien sichern...)
+- MATSim Dokumentation anschauen
+Dienstag der 24.09.19:
+- Meeting --> "Entwicklertreffen von SUMO"
+- MATSim ausführen und ein Programm schreiben zur Umwandlung von MATSim in SUMO
