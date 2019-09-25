@@ -1,0 +1,15 @@
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <matsim-files value="output_network.xml"/>
+    </input>
+
+    <output>
+        <output-file value="Sumo_MATSim.net.xml"/>
+    </output>
+
+    <no-turnarounds value="false"/>
+    <no-turnarounds.geometry value="false"/>
+	<no-internal-links value="true"/>
+
+</configuration>
