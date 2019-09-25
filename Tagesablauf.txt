@@ -23,3 +23,10 @@ Montag der 23.09.19:
 Dienstag der 24.09.19:
 - Meeting --> "Entwicklertreffen von SUMO"
 - MATSim ausführen und ein Programm schreiben zur Umwandlung von MATSim in SUMO
+- Fehler beim Programm suchen
+Mittwoch der 25.09.19:
+- 
+Donnerstag der 26.09.19:
+- 
+Freitag der 27.09.19:
+- 
