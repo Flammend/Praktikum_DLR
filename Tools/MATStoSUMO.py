@@ -61,7 +61,7 @@ def main(options):
             if leg.mode == "car":
                 outf.write('    <vehicle id="%s" depart="%s" >\n' % (idveh , leg.dep_time))
                 outf.write('         <route edges="%s"/>\n' % (leg.route[0].getText()))
-                outf.write('    </vehicle>')
+                outf.write('    </vehicle>\n')
                 idveh=idveh+1
 
         outf.write('</routes>\n')

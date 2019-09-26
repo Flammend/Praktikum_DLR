@@ -61,30 +61,29 @@ def main(options):
         for person in sumolib.output.parse(options.routefile,'person'):
             plan = person.plan[0]
             # write vehicles
-            vehicles = []
+            vehicleslist = []
             for item in plan.getChildList():
                 if item.name == "leg":
-                    outf.write('    <vehicle id="%s" depart="%s" >\n' % (idveh , item.dep_time))
-                    outf.write('         <route edges="%s"/>\n' % (item.route[0].getText()))
-                    outf.write('    </vehicle>')
-                    vehicles.append (idveh)
+                    outf.write('   <vehicle id="%s" depart="%s" >\n' % (idveh , item.dep_time))
+                    outf.write('        <route edges="%s"/>\n' % (item.route[0].getText()))
+                    outf.write('   </vehicle>\n')
+                    vehicleslist.append (idveh)
                     idveh = idveh+1
             # write person
-            outf.write('<person id="%s" >\n' % (person.id))
+            outf.write('   <person id="%s" >\n' % (person.id))
             for item in plan.getChildList():
                 if item.name == "activity":                    
-                    outf.write('   <stop lane="%s_0" until="%s" />\n' %(item.link, item.end_time))        
+                    outf.write('       <stop lane="%s_0" until="%s" />\n' %(item.link, item.end_time))        
                 elif item.name == "leg":
-                    #if leg.mode =="car":
-                    getvehedge ={item.route[0].getText()}
-                    outf.write('<leg >\n')
-                    outf.write('   <ride id="%s" type="%s" depart="%s" from"%s" to"%s" />\n'
-                               %(vehicles[idraus],"veh_passenger",item.dep_time,getvehedge[0],getvehedge[-1]))
-                    outf.write('</leg >')
+                    routelist = []
+                    routelist.append(item.route[0].getText())
+                    firstroute = [routelist[0]]
+                    lastroute = [routelist[-1]]
+                    del routelist[0:-1]
+                    outf.write('       <ride id="%s" type="%s" depart="%s" from="%s" to="%s" />\n'
+                               %("vehicleslist[idraus]","veh_passenger",item.dep_time,firstroute,lastroute))
                     idraus=idraus+1
-            outf.write('</person>')
-            
-
+            outf.write('   </person>\n')
         outf.write('</routes>\n')
     outf.close()
 
