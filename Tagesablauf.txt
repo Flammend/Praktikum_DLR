@@ -22,11 +22,12 @@ Montag der 23.09.19:
 - MATSim Dokumentation anschauen
 Dienstag der 24.09.19:
 - Meeting --> "Entwicklertreffen von SUMO"
-- MATSim ausführen und ein Programm schreiben zur Umwandlung von MATSim in SUMO
-- Fehler beim Programm suchen
+- MATSim ausführen und ein Programm schreiben zur Umwandlung von MATSim in SUMO für Autos
 Mittwoch der 25.09.19:
-- Traffictower
+- Fehler finden im Programm
+- Programm weiterschreiben für Personen
 Donnerstag der 26.09.19:
-- 
+- Traffictower
+- Programm weiterschreiben
 Freitag der 27.09.19:
-- 
+- Programm beenden und ausprobieren
