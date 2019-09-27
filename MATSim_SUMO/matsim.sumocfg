@@ -7,7 +7,7 @@
 
     <input>
         <net-file value="Sumo_MATSim.net.xml"/>
-        <additional-files value="MATStoSUMO.xml"/>
+        <additional-files value="MATSimtoSUMOPerson.xml"/>
     </input>
 
 </configuration>

@@ -55,34 +55,37 @@ def get_options(args=None):
 
 def main(options):
     with open(options.outfile, 'w', encoding="utf8") as outf:
-        idveh=0
-        idraus=0
+
         sumolib.writeXMLHeader(outf, "$Id$", "routes")
         for person in sumolib.output.parse(options.routefile,'person'):
+            vehIndex = 0
             plan = person.plan[0]
             # write vehicles
             vehicleslist = []
-            for item in plan.getChildList():
-                if item.name == "leg":
-                    outf.write('   <vehicle id="%s" depart="%s" >\n' % (idveh , item.dep_time))
-                    outf.write('        <route edges="%s"/>\n' % (item.route[0].getText()))
+            untillist = []
+            for leg in plan.leg:                
+                idveh = "%s_%s" % (person.id, vehIndex)
+                if leg.route[0].distance == "NaN":
+                    outf.write('   <trip id="%s" depart="triggered" from="%s" to="%s"/>\n'
+                               % (idveh,leg.route[0].start_link,leg.route[0].end_link))
+                else:
+                    outf.write('   <vehicle id="%s" depart="triggered" >\n' % (idveh))
+                    outf.write('        <route edges="%s"/>\n' % (leg.route[0].getText()))
                     outf.write('   </vehicle>\n')
-                    vehicleslist.append (idveh)
-                    idveh = idveh+1
+                untillist.append (leg.dep_time)                   
+                vehicleslist.append (idveh)
+                vehIndex=vehIndex+1
+            untillist.append (plan.activity[-1].end_time)
             # write person
-            outf.write('   <person id="%s" >\n' % (person.id))
+            vehIndex = 0
+            outf.write('   <person id="%s" depart="%s">\n' % (person.id, plan.activity[0].start_time))
             for item in plan.getChildList():
-                if item.name == "activity":                    
-                    outf.write('       <stop lane="%s_0" until="%s" />\n' %(item.link, item.end_time))        
+                if item.name == "activity":
+                   outf.write('       <stop lane="%s_0" until="%s" />\n' %(item.link, untillist[vehIndex]))
                 elif item.name == "leg":
-                    routelist = []
-                    routelist.append(item.route[0].getText())
-                    firstroute = [routelist[0]]
-                    lastroute = [routelist[-1]]
-                    del routelist[0:-1]
-                    outf.write('       <ride id="%s" type="%s" depart="%s" from="%s" to="%s" />\n'
-                               %("vehicleslist[idraus]","veh_passenger",item.dep_time,firstroute,lastroute))
-                    idraus=idraus+1
+                    outf.write('       <ride lines="%s" to="%s"  />\n'
+                               %(vehicleslist[vehIndex],item.route[0].end_link))
+                    vehIndex=vehIndex+1
             outf.write('   </person>\n')
         outf.write('</routes>\n')
     outf.close()
