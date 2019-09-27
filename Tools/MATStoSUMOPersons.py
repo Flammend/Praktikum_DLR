@@ -60,6 +60,7 @@ def main(options):
         for person in sumolib.output.parse(options.routefile,'person'):
             vehIndex = 0
             plan = person.plan[0]
+            attributes = person.attributes[0]
             # write vehicles
             vehicleslist = []
             untillist = []
@@ -79,9 +80,11 @@ def main(options):
             # write person
             vehIndex = 0
             outf.write('   <person id="%s" depart="%s">\n' % (person.id, plan.activity[0].start_time))
+            for attr in attributes.attribute:
+                outf.write('       <param key="%s" value="%s"/>\n' % (attr.attr_name, attr.getText()))                      
             for item in plan.getChildList():
                 if item.name == "activity":
-                   outf.write('       <stop lane="%s_0" until="%s" />\n' %(item.link, untillist[vehIndex]))
+                   outf.write('       <stop lane="%s_0" until="%s" actType="%s" />\n' %(item.link, untillist[vehIndex], item.type))
                 elif item.name == "leg":
                     outf.write('       <ride lines="%s" to="%s"  />\n'
                                %(vehicleslist[vehIndex],item.route[0].end_link))
